@@ -11,6 +11,8 @@ body {
     background-color: var(--color1);
     text-align: center;
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
 }
 .container {
     padding: 0 3rem;
@@ -63,7 +65,8 @@ li, a {
     font-size: 1rem;
     font-weight: bold;
     padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
 }
 .practice div {
     justify-content: space-between;
@@ -81,6 +84,8 @@ footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: whitesmoke;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 footer form {
     display: flex;
@@ -88,8 +93,6 @@ footer form {
     justify-content: left;
     align-items: left;
     gap: 1.2rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 footer form input, textarea {
     width: 50%;
