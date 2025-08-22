@@ -1,8 +1,8 @@
 :root {
     --color1: #fbf9f6;
     --color2: #f3f3f3;
-    --color3: #1b1b1b;
-    --color4: #cdae87;
+    --color3: #103335;
+    --color4: #ccb292;
 }
 body {
     margin: 0;
@@ -22,10 +22,9 @@ header {
     font-size: 0.55rem;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
-}
-header h1 {
-    font-size: 1.5rem;
+    padding: 3vh 6vw;
+    background-color: var(--color3);
+    color: var(--color1);
 }
 nav ul {
     display: flex;
@@ -34,39 +33,31 @@ nav ul {
 }
 li, a {
     text-decoration: none;
-    color: black;
+    color: var(--color1);
     list-style: none;
 }
 .hero {
-    padding: 5rem 2em;
+    padding: 18vh 6vw;
     text-align: left;
     background-image: url(assets/img/hero-bg.webp);
-    color: #fbf9f7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color1);
 }
-.hero h2 {
+.hero h1 {
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     font-size: 2rem;
 }
-.button {
-    color: black;
-    font-size: 0.7rem;
-    background-color: var(--color4);
-    border: 1px solid #685844;
-    border-radius: 0.3rem;
-    padding: 0.6rem 1.5rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
-}
 .about {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }   
 .practice {
     background-color: var(--color2);
     font-size: 1rem;
     font-weight: bold;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-bottom: 0;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
 }
 .practice div {
     justify-content: space-between;
@@ -77,15 +68,13 @@ li, a {
     align-items: center;
 }
 .practice img {
-    width: 3rem;
+    width: 10vw;
 }
-footer {
+.contact {
     background-color: var(--color3);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: whitesmoke;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    color: var(--color1);
+    padding: 3vh 6vw;
+    padding-bottom: 0;
 }
 footer form {
     display: flex;
@@ -95,15 +84,35 @@ footer form {
     gap: 1.2rem;
 }
 footer form input, textarea {
-    width: 50%;
     padding: 1rem 2rem;
     box-shadow: inset 1px 1px 2px black;
     border-radius: 0.4rem;
-    background-color: whitesmoke;
+    color: var(--color1);
     border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
 }
-footer form input[type="submit"] {
+.button {
     background-color: var(--color4);
-    width: 30%;
-    
+    display: flex;
+    align-self: left;
+    padding: 2vh 5vw;
+    color: black;
+    font-size: 0.7rem;
+    background-color: var(--color4);
+    border: 1px solid #685844;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+    width: fit-content;
+}
+.address {
+    display: flex;
+    gap: 20vw;
+    margin-bottom: 20vh;
+}
+#address-title {
+    width: max-content;
+    text-align: left;
+}
+#creditos {
+    opacity: 0.3;
 }
