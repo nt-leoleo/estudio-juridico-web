@@ -47,7 +47,7 @@ li, a {
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     font-size: 2rem;
 }
-.hero button {
+.button {
     color: black;
     font-size: 0.7rem;
     background-color: var(--color4);
