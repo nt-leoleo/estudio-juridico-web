@@ -130,6 +130,16 @@ footer form input, textarea {
     display: flex;
     gap: 20vw;
     margin-bottom: 20vh;
+    text-align: left;
+}
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.whatsapp img {
+    filter: invert(100%);
 }
 #address-title {
     width: max-content;
@@ -138,4 +148,5 @@ footer form input, textarea {
 }
 #creditos {
     opacity: 0.3;
+    text-align: center;
 }
