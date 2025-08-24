@@ -4,6 +4,9 @@
     --color3: #103335;
     --color4: #ccb292;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -128,7 +131,8 @@ footer form input, textarea {
 }
 .address {
     display: flex;
-    gap: 20vw;
+    flex-direction: column;
+    gap: 5vw;
     margin-bottom: 20vh;
     text-align: left;
 }

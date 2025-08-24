@@ -22,7 +22,7 @@
 
     <section class="hero">
         <h1>Gladys Alaniz <br> Fernández <br> & Asociados.</h1>
-        <button class="button">GET IN TOUCH</button>
+        <a href="#contact"><button class="button">CONTACTAR</button></a>
     </section>
     <section id="about" class="about container">
         <h2>ABOUT US</h3>
@@ -68,7 +68,13 @@
             Contacta por este medio para turnos, o envíanos un WhatsApp
             al número a continuación.
         </p>
-        <form action="#" method="POST" class="contact-form">
+        <form 
+        action="https://formspree.io/f/xkgzdplg" 
+        method="POST" class="contact-form"
+        >
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde ESTUDIO JURÍDICO">
+
+
             <input type="text" name="name" id="name" placeholder="Nombre" required>
             <input type="email" name="email" id="email" placeholder="Email" required>
             <textarea name="message" id="message" placeholder="Mensaje" rows="5" required></textarea>
@@ -78,12 +84,17 @@
         <h3 id="address-title">ADDRESS</h3>
         <div class="address">
             <div>
-                <span>1234 main street <br> Anytown, ARG</span>
+                <span>
+                    25 de Mayo 1001.
+                    Esquina San Martín, local 2.
+                </span>
             </div>
-            <div class="whatsapp">
+            <a class="whatsapp" href="https://wa.me/2664756247?text=Hola%20quiero%20más%20info"
+   target="_blank">
                 <img src="assets/img/whatsapp.png" width="20vw">
-                <b id="copyMe" onclick="copiarTexto()">2665112233</b>
-            </div>
+                <b>2664756247</b>
+                <button class="button">Mandar WhatsApp</button>
+            </a>
         </div>
         <p id="creditos">Creado por Leonardo Pedernera - Leonardo.tec@gmail.com</p>
     </footer>
