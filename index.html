@@ -8,24 +8,41 @@
 </head>
 <body>
     <header>
-        <img src="assets/img/logo.webp">
-        <h2>ESTUDIO JURÍDICO</h2>
+        <a onclick="openMenu()" class="menu-button"> 
+            <img src="assets/img/menu.png">
+        </a>
+        <div class="logo">
+            <h2>ESTUDIO JURÍDICO</h2>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html"> INICIO </a></li>
-                <li><a href="#about"> ACERCA DE </a></li>
+                <li><a href="#about"> NOSOTROS </a></li>
                 <li><a href="#practice"> SERVICIOS </a></li>
                 <li><a href="#contact"> CONTACTO </a></li>
             </ol>
         </nav>
     </header>
+    <div class="overlay" id="menu">
+        <menu type="toolbar">
+            <b>
+                <button onclick="closeMenu()"> X </button>
+            </b>
+            <ul>
+                <li><a href="index.html"> INICIO </a></li>
+                <li><a href="#about"> NOSOTROS </a></li>
+                <li><a href="#practice"> SERVICIOS </a></li>
+                <li><a href="#contact"> CONTACTO </a></li>
+            </ol>
+        </menu>
+    </div>
 
     <section class="hero">
+        <img src="assets/img/logo.png" class="logo-hero">
         <h1>Gladys Alaniz <br> Fernández <br> & Asociados.</h1>
         <a href="#contact"><button class="button">CONTACTAR</button></a>
     </section>
     <section id="about" class="about container">
-        <h2>ABOUT US</h3>
+        <h2>ACERCA DE NOSOTROS</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
             Laudantium omnis dolore, dignissimos earum qui illo 
             repudiandae ab quos eos sit, eius dolor. Debitis rerum, 
@@ -33,7 +50,7 @@
         </p>
     </section>
     <section id="practice" class="practice container">
-        <h3>NUESTROS SERVICIOS</h3>
+        <h2>NUESTROS SERVICIOS</h2>
         <div>
             <div class="servicio">
                 <img src="assets/img/plan-de-sucesion.png">
@@ -63,7 +80,7 @@
     </section>
 
     <footer id="contact" class="contact container">
-        <h2>CONTACT</h2>
+        <h2>CONTACTO</h2>
         <p>
             Contacta por este medio para turnos, o envíanos un WhatsApp
             al número a continuación.
@@ -81,7 +98,7 @@
             <input type="submit" value="ENVIAR CORREO" class="button">
         </form>
         <br> <br>
-        <h3 id="address-title">ADDRESS</h3>
+        <h3 id="address-title">DIRECCIÓN</h3>
         <div class="address">
             <div>
                 <span>
@@ -89,8 +106,7 @@
                     Esquina San Martín, local 2.
                 </span>
             </div>
-            <a class="whatsapp" href="https://wa.me/2664756247?text=Hola%20quiero%20más%20info"
-   target="_blank">
+            <a class="whatsapp" href="https://wa.me/2664756247?text=Hola%20quiero%20más%20info" target="_blank">
                 <img src="assets/img/whatsapp.png" width="20vw">
                 <b>2664756247</b>
                 <button class="button">Mandar WhatsApp</button>

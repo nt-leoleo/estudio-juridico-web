@@ -12,7 +12,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(mail($to, $subject, $body, $headers)){
         echo "¡Mensaje enviado correctamente! Gracias por contactarte.";
     } else {
-        echo "Error al enviar el mensaje.";
+        echo `Error al enviar el mensaje. to: ${$to} - subject: 
+        ${$subject} - body: ${$body} - headers: ${$headers}.`;
     }
 }
 ?>
