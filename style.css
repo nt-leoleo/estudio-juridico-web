@@ -3,6 +3,7 @@
     --color2: #f3f3f3;
     --color3: #103335;
     --color4: #ccb292;
+    --color5: #051011;
 }
 html {
   scroll-behavior: smooth;
@@ -16,6 +17,12 @@ body {
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
+}
+button {
+    cursor: pointer;
+}
+input {
+    cursor: pointer;
 }
 h2 {
     font-size: 2.5em;
@@ -32,6 +39,7 @@ header {
     padding: 1vh 6vw;
     background-color: var(--color3);
     color: var(--color1);
+    position: sticky;
 }
 header h2 {
     font-size: 2em;
@@ -43,9 +51,7 @@ header img {
 .logo {
     display: flex;
 }
-.menu-button img {
-    width: 6vw;
-}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -57,11 +63,32 @@ li, a {
     list-style: none;
     color: var(--color1);
 }
+a {
+    cursor: pointer;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.menu-button {
+    cursor: pointer;
+}
+.menu-button img {
+    width: 6vw;
+}
+menu ul, menu li, menu a {
+    flex-direction: column;
+    color: var(--color1);
+}
 menu a {
     font-size: 1.7rem;
+    cursor: pointer;
 }
 menu li {
-    border-bottom: 0.15rem solid var(--color3);
+    border-bottom: 0.15rem solid var(--color1);
     padding-bottom: 4vh;
     padding-left: 20vw;
     padding-right: 20vw;
@@ -71,19 +98,17 @@ menu li {
 menu {
     display: flex;
     flex-direction: column;
-    background-color: var(--color1);
-    color: black;
+    background-color: var(--color5);
     align-self: center;
     justify-self: center;
     padding: 0 8vw 15vh 8vw;
     border-radius: 1rem;
     z-index: 2;
 }
-menu b {
+menu b { /* close menu (X) position */
     position: relative;
     width: 100%;
     text-align: right;
-    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -92,12 +117,11 @@ menu b {
     margin-top: 3.5vh;
     margin-bottom: 10vh;
 }
-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
+menu button { /*close menu (X)*/
+    background-color: transparent;
+    color: var(--color1);
+    border: none;
+    font-size: 2rem;
 }
 .overlay {
   position: fixed;
@@ -109,13 +133,9 @@ ul {
   display: none;
   justify-content: center; /* centro horizontal */
   align-items: center;     /* centro vertical */
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.7);
 
   /* display: none; */
-}
-menu ul, menu li, menu a {
-    flex-direction: column;
-    color: black;
 }
 .hero {
     padding: 10vh 6vw;
@@ -224,8 +244,8 @@ textarea:focus, input:focus {
     display: flex;
     flex-direction: column;
     gap: 5vw;
-    margin-bottom: 20vh;
     text-align: left;
+    margin-bottom: 6vh;
 }
 .whatsapp {
     display: flex;
@@ -241,7 +261,19 @@ textarea:focus, input:focus {
     text-align: left;
     font-size: 1.2rem;
 }
+footer ul {
+    justify-self: center;
+    margin-bottom: 20vh;
+}
 #creditos {
     opacity: 0.3;
     text-align: center;
+}
+
+
+/* Escritorios grandes */
+@media (max-width: 1200px) {
+}
+#left-block, #right-block {
+    /* outline: auto; */
 }

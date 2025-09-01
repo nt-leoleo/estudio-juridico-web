@@ -11,5 +11,4 @@ function openMenu() {
   menuOverlay.style.display = "flex";
   menuOverlay.style.zIndex = 1;
   heroImage.style.zIndex = 0;
-
 }

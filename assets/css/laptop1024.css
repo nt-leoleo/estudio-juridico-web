@@ -1,0 +1,82 @@
+:root {
+    --color1: #fbf9f6;
+    --color2: #f3f3f3;
+    --color3: #103335;
+    --color4: #ccb292;
+    --color5: #051011;
+}
+
+/* Laptops */
+@media (min-width: 1024px) {
+  header {
+    justify-content: space-between;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  body {
+    background-color: var(--color5);
+  }
+  .logo {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 0;
+  }
+  .logo h2{
+    width: 100%;
+  }
+  .menu-button img {
+    width: 2vw;
+  }
+  .menu-button {
+    z-index: 2;
+  }
+  .hero img {
+    width: 17vw;
+  }
+  nav {
+    z-index: 2;
+  }
+  .servicio {
+    padding-bottom: 10vh;
+    width: 33vw;
+  }
+  footer {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .address {
+    text-align: left;
+    flex-direction: row;
+  }
+  #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #contact div ul li {
+    padding: 2vh 10vw;
+    border-radius: 10rem;
+  }
+  #contact div ul li:hover {
+    background-color: rgba(245, 245, 245, 0.253);
+  }
+  #creditos {
+    background-color: var(--color5);
+    color: var(--color1); 
+  }
+  .about {
+    background-color: var(--color1);
+  }
+  #right-block {
+    margin-left: 20vw;
+    padding-top: 2.3vw;
+  }
+  .whatsapp {
+    margin-bottom: 1.7vw;
+  }
+}
