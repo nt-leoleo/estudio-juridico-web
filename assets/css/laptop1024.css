@@ -31,6 +31,11 @@
   .menu-button {
     z-index: 2;
   }
+  menu li:hover {
+    background-color: rgba(245, 245, 245, 0.253);
+    border-color: transparent;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+  }
   .hero img {
     width: 17vw;
   }

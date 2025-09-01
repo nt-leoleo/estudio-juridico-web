@@ -86,23 +86,29 @@ menu ul, menu li, menu a {
 menu a {
     font-size: 1.7rem;
     cursor: pointer;
+    color: black;
 }
 menu li {
+    border: 0.01rem solid var(--color1);
     border-bottom: 0.15rem solid var(--color1);
     padding-bottom: 4vh;
     padding-left: 20vw;
     padding-right: 20vw;
-    color: var(--color1);
+    padding: 2vh 10vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+    transition: 200ms;
 }
 
 menu {
     display: flex;
     flex-direction: column;
-    background-color: var(--color5);
+    background-color: var(--color2);
     align-self: center;
     justify-self: center;
     padding: 0 8vw 15vh 8vw;
     border-radius: 1rem;
+    border: 0.1rem solid var(--color1);
     z-index: 2;
 }
 menu b { /* close menu (X) position */
@@ -119,9 +125,10 @@ menu b { /* close menu (X) position */
 }
 menu button { /*close menu (X)*/
     background-color: transparent;
-    color: var(--color1);
     border: none;
     font-size: 2rem;
+    color: var(--color5);
+    transition: 100ms;
 }
 .overlay {
   position: fixed;
@@ -135,10 +142,12 @@ menu button { /*close menu (X)*/
   align-items: center;     /* centro vertical */
   background: rgba(0,0,0,0.7);
 
+  transition: 300ms;
+
   /* display: none; */
 }
 .hero {
-    padding: 10vh 6vw;
+    padding: 10vh 10vw;
     text-align: left;
     background-image: url(assets/img/hero-bg.jpg);
     background-repeat: no-repeat;
@@ -273,7 +282,4 @@ footer ul {
 
 /* Escritorios grandes */
 @media (max-width: 1200px) {
-}
-#left-block, #right-block {
-    /* outline: auto; */
 }
