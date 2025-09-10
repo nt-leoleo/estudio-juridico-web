@@ -1,9 +1,9 @@
 :root {
-    --color1: #fbf9f6;
-    --color2: #f3f3f3;
-    --color3: #103335;
-    --color4: #ccb292;
-    --color5: #051011;
+  --color1: #fbf9f6;
+  --color2: #f3f3f3;
+  --color3: #103335;
+  --color4: #ccb292;
+  --color5: #051011;
 }
 
 /* Laptops */
@@ -22,7 +22,7 @@
     left: 0;
     z-index: 0;
   }
-  .logo h2{
+  .logo h2 {
     width: 100%;
   }
   .menu-button img {
@@ -72,10 +72,14 @@
   }
   #creditos {
     background-color: var(--color5);
-    color: var(--color1); 
+    color: var(--color1);
   }
   .about {
     background-color: var(--color1);
+  }
+  .about p {
+    width: 60%;
+    font-size: 1rem;
   }
   #right-block {
     margin-left: 20vw;

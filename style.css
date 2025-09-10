@@ -1,134 +1,141 @@
 :root {
-    --color1: #fbf9f6;
-    --color2: #f3f3f3;
-    --color3: #103335;
-    --color4: #ccb292;
-    --color5: #051011;
+  --color1: #fbf9f6;
+  --color2: #f3f3f3;
+  --color3: #103335;
+  --color4: #ccb292;
+  --color5: #051011;
+  --color6: #ebe8e8;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: var(--color1);
-    text-align: center;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--color1);
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 input {
-    cursor: pointer;
+  cursor: pointer;
 }
 h2 {
-    font-size: 2.5em;
-    left: -0.7rem;
+  font-size: 2.5em;
+  left: -0.7rem;
 }
 .container {
-    padding: 0 3rem;
+  padding: 0 3rem;
 }
 header {
-    display: flex;
-    font-size: 0.6rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1vh 6vw;
-    background-color: var(--color3);
-    color: var(--color1);
-    position: sticky;
+  display: flex;
+  font-size: 0.6rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 6vw;
+  background-color: var(--color3);
+  color: var(--color1);
+  position: sticky;
 }
 header h2 {
-    font-size: 2em;
-    margin-left: 1vw;
+  font-size: 2em;
+  margin-left: 1vw;
 }
 header img {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 .logo {
-    display: flex;
+  display: flex;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    /* gap: 0.7rem; */
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* gap: 0.7rem; */
+  align-items: center;
 }
-li, a {
-    text-decoration: none;
-    list-style: none;
-    color: var(--color1);
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color1);
 }
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 .menu-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 .menu-button img {
-    width: 6vw;
+  width: 6vw;
 }
-menu ul, menu li, menu a {
-    flex-direction: column;
-    color: var(--color1);
+menu ul,
+menu li,
+menu a {
+  flex-direction: column;
+  color: var(--color1);
 }
 menu a {
-    font-size: 1.7rem;
-    cursor: pointer;
-    color: black;
+  font-size: 1.7rem;
+  cursor: pointer;
+  /* color: black; */
 }
 menu li {
-    border: 0.01rem solid var(--color1);
-    border-bottom: 0.15rem solid var(--color1);
-    padding-bottom: 4vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding: 2vh 10vw;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
-    border-radius: 0.5rem;
-    transition: 200ms;
+  border: 0.01rem solid var(--color1);
+  border-bottom: 0.15rem solid var(--color1);
+  padding-bottom: 4vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding: 2vh 10vw;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  border-radius: 0.5rem;
+  transition: 200ms;
 }
 
 menu {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color2);
-    align-self: center;
-    justify-self: center;
-    padding: 0 8vw 15vh 8vw;
-    border-radius: 1rem;
-    border: 0.1rem solid var(--color1);
-    z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-self: center;
+  justify-self: center;
+  padding: 0 30vw 15vh 30vw;
+  border-radius: 1rem;
+  /* border: 0.1rem solid var(--color1); */
+  z-index: 2;
 }
-menu b { /* close menu (X) position */
-    position: relative;
-    width: 100%;
-    text-align: right;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    top: 0;
-    right: 0;
-    margin-top: 3.5vh;
-    margin-bottom: 10vh;
+menu b {
+  /* close menu (X) position */
+  position: relative;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  margin-top: 3.5vh;
+  margin-bottom: 10vh;
 }
-menu button { /*close menu (X)*/
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: var(--color5);
-    transition: 100ms;
+menu button {
+  /*close menu (X)*/
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  transition: 100ms;
+  color: white;
 }
 .overlay {
   position: fixed;
@@ -136,149 +143,168 @@ menu button { /*close menu (X)*/
   left: 0;
   width: 100%;
   height: 100%;
-  
+
   display: none;
   justify-content: center; /* centro horizontal */
-  align-items: center;     /* centro vertical */
-  background: rgba(0,0,0,0.7);
+  align-items: center; /* centro vertical */
+  background: rgba(0, 0, 0, 0.7);
 
   transition: 300ms;
 
   /* display: none; */
 }
 .hero {
-    padding: 10vh 10vw;
-    text-align: left;
-    background-image: url(assets/img/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--color1);
+  padding: 10vh 10vw;
+  text-align: left;
+  background-image: url(assets/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color1);
 }
 .hero img {
-    filter: invert(1);
-    width: 40vw;
+  filter: invert(1);
+  width: 40vw;
 }
 .hero h1 {
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    font-size: 2rem;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-size: 2rem;
 }
 .about {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    font-size: 0.9rem;
-}   
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .practice {
-    background-color: var(--color2);
-    font-size: 1rem;
-    font-weight: bold;
-    padding-top: 10vh;
-    padding-bottom: 15vh;
+  background-color: var(--color2);
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
 }
 .practice hr {
-    border: none;
-    border-bottom: 1px solid var(--color3);
+  border: none;
+  border-bottom: 1px solid var(--color3);
 }
 .practice div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .practice img {
-    width: 10vw;
+  width: 10vw;
 }
 .practice .servicio {
-    margin-bottom: 5vh;
-    border: 1px solid #10333500;
-    border-bottom: 1px solid var(--color3);
-    transition-duration: 300ms;
+  margin-bottom: 5vh;
+  border: 1px solid #10333500;
+  border-bottom: 1px solid var(--color3);
+  transition-duration: 300ms;
 }
 .practice .servicio:hover {
-    border: 1px solid var(--color3);
+  border: 1px solid var(--color3);
+}
+.staff {
+  background-color: var(--color6);
+  padding: 10vh 0;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.miembro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7vh;
+  width: 60%;
 }
 .contact {
-    background-color: var(--color3);
-    color: var(--color1);
-    padding: 10vh 6vw;
-    padding-bottom: 0;
+  background-color: var(--color3);
+  color: var(--color1);
+  padding: 10vh 6vw;
+  padding-bottom: 0;
 }
 .contact p {
-    text-align: left;
-    padding-bottom: 5vh;
+  text-align: left;
+  padding-bottom: 5vh;
 }
 footer form {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 1.2rem;
 }
-footer form input, textarea {
-    padding: 1rem 2rem;
-    box-shadow: inset 1px 1px 2px black;
-    border-radius: 0.4rem;
-    color: var(--color1);
-    border: 1px solid black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
-    color: black;
+footer form input,
+textarea {
+  padding: 1rem 2rem;
+  box-shadow: inset 1px 1px 2px black;
+  border-radius: 0.4rem;
+  color: var(--color1);
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+  color: black;
 }
-textarea:focus, input:focus {
-    outline: 1vw solid var(--color4);
-    box-shadow: inset 0 0 0.5rem black;
+textarea:focus,
+input:focus {
+  outline: 1vw solid var(--color4);
+  box-shadow: inset 0 0 0.5rem black;
 }
 .button {
-    background-color: var(--color4);
-    display: flex;
-    align-self: left;
-    padding: 2vh 5vw;
-    color: black;
-    font-size: 0.7rem;
-    background-color: var(--color4);
-    border: 1px solid #685844;
-    border-radius: 0.3rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
-    width: fit-content;
-    transition: 300ms;
-
+  background-color: var(--color4);
+  display: flex;
+  align-self: left;
+  padding: 2vh 5vw;
+  color: black;
+  font-size: 0.7rem;
+  background-color: var(--color4);
+  border: 1px solid #685844;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+  width: fit-content;
+  transition: 300ms;
 }
 .button:hover {
-    border: 1px solid var(--color4);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--color4);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 .button:click {
-    border: 1px solid var(--color4);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--color4);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 .address {
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
-    text-align: left;
-    margin-bottom: 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  text-align: left;
+  margin-bottom: 6vh;
 }
 .whatsapp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
 }
 .whatsapp img {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 #address-title {
-    width: max-content;
-    text-align: left;
-    font-size: 1.2rem;
+  width: max-content;
+  text-align: left;
+  font-size: 1.2rem;
 }
 footer ul {
-    justify-self: center;
-    margin-bottom: 20vh;
+  justify-self: center;
+  margin-bottom: 20vh;
 }
 #creditos {
-    opacity: 0.3;
-    text-align: center;
+  opacity: 0.3;
+  text-align: center;
 }
-
 
 /* Escritorios grandes */
 @media (max-width: 1200px) {

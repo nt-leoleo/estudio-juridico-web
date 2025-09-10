@@ -1,5 +1,5 @@
-let menuOverlay = document.querySelector('.overlay');
-let heroImage = document.querySelector('.logo-hero');
+let menuOverlay = document.querySelector(".overlay");
+let heroImage = document.querySelector(".logo-hero");
 
 function closeMenu() {
   menuOverlay.style.display = "none";
@@ -12,3 +12,8 @@ function openMenu() {
   menuOverlay.style.zIndex = 1;
   heroImage.style.zIndex = 0;
 }
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeMenu();
+  }
+});
