@@ -6,6 +6,7 @@ Incluye información institucional, servicios ofrecidos y un formulario de conta
 ---
 
 ## 🚀 Características
+
 - Diseño responsivo y profesional
 - Página de inicio con presentación del estudio
 - Sección de servicios legales
@@ -14,6 +15,8 @@ Incluye información institucional, servicios ofrecidos y un formulario de conta
 ---
 
 ## 📂 Estructura del proyecto
+
+```
 estudio-juridico-web/
 │── index.html              # Página principal
 │── contacto.html           # Formulario de contacto (opcional separado)
@@ -27,10 +30,12 @@ estudio-juridico-web/
 │   └── 📂 js/              # JS adicionales (ej: validaciones.js)
 │
 └── 📂 docs/                # Documentación opcional (ej: notas, info legal)
+```
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
+
 - HTML5
 - CSS3
 - JavaScript (vanilla)
@@ -38,5 +43,6 @@ estudio-juridico-web/
 ---
 
 ## 📬 Contacto
+
 Creado por **[nt-leoleo](https://github.com/nt-leoleo)**  
 📧 pederneraleonardo.tec@gmail.com
