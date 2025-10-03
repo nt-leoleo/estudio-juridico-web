@@ -92,8 +92,6 @@ menu a {
   font-size: 1.7rem;
   cursor: pointer;
   /* color: black; */
-}
-menu li {
   border: 0.01rem solid var(--color1);
   border-bottom: 0.15rem solid var(--color1);
   padding-bottom: 4vh;
@@ -103,6 +101,14 @@ menu li {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   border-radius: 0.5rem;
   transition: 200ms;
+}
+menu a:hover,
+menu a:active {
+  background-color: var(--color4);
+  color: black;
+  border: 0.01rem solid var(--color4);
+  border-bottom: 0.15rem solid var(--color4);
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 1);
 }
 
 menu {
