@@ -101,6 +101,7 @@ menu a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   border-radius: 0.5rem;
   transition: 200ms;
+  margin-bottom: 1.3rem;
 }
 menu a:hover,
 menu a:active {
@@ -308,6 +309,10 @@ footer ul {
   margin-bottom: 20vh;
 }
 #creditos {
-  opacity: 0.3;
+  opacity: 1;
   text-align: center;
+  color: rgba(245, 245, 245, 0.308);
+  background-color: var(--color5);
+  margin: 0;
+  padding: 1.5vh 0;
 }

@@ -70,10 +70,6 @@
   #contact div ul li:hover {
     background-color: rgba(245, 245, 245, 0.253);
   }
-  #creditos {
-    background-color: var(--color5);
-    color: var(--color1);
-  }
   .about {
     background-color: var(--color1);
   }
