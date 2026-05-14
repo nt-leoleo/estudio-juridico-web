@@ -149,7 +149,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: min(88vw, 380px);
+  width: 88vw;
+  max-width: 380px;
   height: 100%;
   padding: 18px;
   background: $paper;
@@ -215,7 +216,8 @@ a {
 .hero__summary {
   position: relative;
   z-index: 1;
-  width: min(100%, $max-width);
+  width: 100%;
+  max-width: $max-width;
   margin: 0 auto;
 }
 
@@ -280,7 +282,8 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: min(100%, 360px);
+  width: 100%;
+  max-width: 360px;
 }
 
 .button {
@@ -341,7 +344,8 @@ h3 {
 .team-list,
 .contact-section__content,
 .footer-bar {
-  width: min(100%, $max-width);
+  width: 100%;
+  max-width: $max-width;
   margin: 0 auto;
 }
 
@@ -627,7 +631,7 @@ h3 {
 
   .hero__actions {
     flex-direction: row;
-    width: auto;
+    max-width: none;
   }
 
   .hero__summary,
