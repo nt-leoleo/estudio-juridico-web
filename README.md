@@ -1,48 +1,51 @@
-# Estudio Jurídico Web ⚖️
+# Estudio Jurídico Web
 
-Sitio web profesional para un estudio jurídico, desarrollado con **HTML, CSS y JavaScript**.  
-Incluye información institucional, servicios ofrecidos y un formulario de contacto.
+Sitio web profesional para **Gladys Alaniz Fernández & Asociados**, reconstruido con **React**, **Vite** y **SCSS** con enfoque mobile first.
 
----
+## Características
 
-## 🚀 Características
+- Interfaz mobile first con navegación responsive.
+- Página institucional de una sola vista con secciones de presentación, servicios, equipo y contacto.
+- Formulario conectado a Formspree.
+- Acceso directo por WhatsApp.
+- Build preparado para despliegue en GitHub Pages.
 
-- Diseño responsivo y profesional
-- Página de inicio con presentación del estudio
-- Sección de servicios legales
-- Formulario de contacto con caja de texto para mensajes
+## Tecnologías
 
----
+- React 19
+- Vite
+- SCSS
+- Lucide React
 
-## 📂 Estructura del proyecto
+## Scripts
 
+```bash
+npm install
+npm run dev
+npm run build
+npm run preview
 ```
+
+## Estructura
+
+```text
 estudio-juridico-web/
-│── index.html              # Página principal
-│── contacto.html           # Formulario de contacto (opcional separado)
-│── servicios.html          # Sección de servicios
-│── style.css               # Estilos principales
-│── script.js               # Funciones JS (validación, animaciones, etc.)
-│
-├── 📂 assets/              # Archivos estáticos
-│   ├── 📂 img/             # Imágenes (logo, fondo, fotos del estudio)
-│   ├── 📂 css/             # CSS adicionales (ej: responsive.css)
-│   └── 📂 js/              # JS adicionales (ej: validaciones.js)
-│
-└── 📂 docs/                # Documentación opcional (ej: notas, info legal)
+├── index.html
+├── package.json
+├── vite.config.js
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles/
+│       └── main.scss
+├── assets/
+│   └── img/
+└── .github/
+    └── workflows/
+        └── deploy.yml
 ```
 
----
-
-## 🛠️ Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript (vanilla)
-
----
-
-## 📬 Contacto
+## Contacto
 
 Creado por **[nt-leoleo](https://github.com/nt-leoleo)**  
-📧 pederneraleonardo.tec@gmail.com
+Email: pederneraleonardo.tec@gmail.com

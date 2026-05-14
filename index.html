@@ -1,183 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Estudio Jurídico Gladys Alaniz Fernández 
-    & Asociados - Abogados en San Luis, Argentina. Servicios legales en 
-    sucesiones, divorcios, amparos y más. Contacto directo por WhatsApp.">
-    <meta name="keywords" content="Abogados San Luis, Estudio Jurídico,
-    Gladys Alaniz Fernández, Gladys y Asociados, Servicios legales, Abogados 
-    San Luis, Divorcios, Sucesiones, Amparos, Posesión Veinteañal, Desalojo, 
-    Reivindicación, Alimentos, Derecho de Familia, Asesoramiento legal,
-    Consultoría jurídica, Defensa legal, Abogados especializados,
-    Abogados de confianza, Abogados profesionales, Abogados en Argentina">
-
-    <title>Gladys y Asociados - Estudio Jurídico</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/laptop1024.css">
-    <link rel="stylesheet" href="assets/css/desktop1200.css">
-
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-</head>
-<body>
-    <header>
-        <a onclick="openMenu()" class="menu-button"> 
-            <img src="assets/img/menu.png" alt="menu estudio jurídico">
-        </a>
-
-        <div class="logo">
-            <h2>ESTUDIO JURÍDICO</h2>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#about"> NOSOTROS </a></li>
-                <li><a href="#practice"> SERVICIOS </a></li>
-                <li><a href="#contact"> CONTACTO </a></li>
-            </ol>
-        </nav>
-    </header>
-    <div class="overlay" id="menu" onclick="closeMenu()">
-        <menu type="toolbar">
-            <b>
-                <button onclick="closeMenu()"> X </button>
-            </b>
-            <a href="index.html" onclick="closeMenu()"> INICIO </a>
-            <a href="#about" onclick="closeMenu()"> NOSOTROS </a>
-            <a href="#practice" onclick="closeMenu()"> SERVICIOS </a>
-            <a href="#contact" onclick="closeMenu()"> CONTACTO </a>
-        </menu>
-    </div>
-
-    <section class="hero">
-        <img src="assets/img/logo.png" class="logo-hero" alt="logo estudio jurídico Gladys y asociados">
-        <h1>Gladys Alaniz <br> Fernández <br> & Asociados.</h1>
-        <a href="#contact"><button class="button">CONTACTAR</button></a>
-    </section>
-    <section id="about" class="about container">
-        <h2>ACERCA DE NOSOTROS</h2>
-        <p>
-            Somos un <strong>equipo de abogados</strong> comprometidos con brindar 
-            <strong>soluciones legales</strong> eficaces, claras y a la medida 
-            de cada cliente. Nos especializamos en distintas ramas del derecho, lo 
-            que nos permite ofrecer un asesoramiento integral tanto a personas 
-            como a empresas.
-        </p>
-        <p>
-            Nuestro objetivo es acompañar y defender los intereses de nuestros 
-            clientes con seriedad, transparencia y ética profesional. Creemos 
-            en la importancia de una <strong>atención personalizada</strong>, 
-            escuchando cada 
-            caso con dedicación y buscando siempre <strong>la mejor estrategia 
-            legal</strong>.
-        </p>
-        <p>
-            Con una sólida formación académica y amplia experiencia práctica, 
-            trabajamos con pasión para resolver conflictos, prevenir riesgos 
-            y generar confianza en cada paso del proceso.
-        </p>
-    </section>
-    <section id="practice" class="practice container">
-        <h2>NUESTROS SERVICIOS</h2>
-        <div>
-            <div class="servicio">
-                <img src="assets/img/plan-de-sucesion.png" alt="sucesiones">
-                <article>Sucesiones</article>
-            </div>
-            <div class="servicio">
-                <img src="assets/img/posesion.png" alt="posesion veinteañal">
-                <article>Posesión Veinteañal</article>
-            </div>
-            <div class="servicio">
-                <img src="assets/img/desalojo.png" alt="desalojo Reivindicación">
-                <article>Desalojo / Reivindicación</article>
-            </div>
-            <div class="servicio">
-                <img src="assets/img/divorcio.png" alt="divorcios">
-                <article>Divorcios</article>
-            </div>
-            <div class="servicio">
-                <img src="assets/img/amparo.png" alt="amparos">
-                <article>Amparos</article>
-            </div>
-            <div class="servicio">
-                <img src="assets/img/alimentos.png" alt="alimentos y reg. comunicación">
-                <article>Alimentos / Reg. comunicación</article>
-            </div>
-        </div>
-    </section>
-    <section id="staff" class="staff container">
-        <h2>NUESTRO EQUIPO</h2>
-            <div class="miembro">
-                <b>GLADYS ARGENTINA ALANIZ FERNÁNDEZ </b>
-                Escribana - Abogada - Procuradora - Profesora en 
-                Ciencias Jurídicas, Políticas  y sociales - 
-                Diplomada en Derecho Constitucional 
-            </div>
-            <div class="miembro">
-                <b> MARIO RAÚL VARA </b>
-                Abogado - Procurador - Profesor de Historia y 
-                Formación Ética y Ciudadana. 
-            </div>
-            <div class="miembro">
-                <b>LUCIA ALANIZ FERNÁNDEZ </b>
-                Abogada - Procuradora - Martillera Publica - 
-                Diplomada en Derecho Sucesorio - Diplomada en 
-                Derecho de Familia.
-            </div>
-    </section>
-
-    <footer id="contact" class="contact container">
-        <div id="contact">
-            <div id="left-block">
-                <h2>CONTACTO</h2>
-                <p>
-                    <strong>Contacta</strong> por este medio para turnos, o 
-                    envíanos un <strong>WhatsApp</strong> al número a 
-                    continuación.
-                </p>
-                <form 
-                action="https://formspree.io/f/xkgzdplg" 
-                method="POST" class="contact-form"
-                >
-                    <input type="hidden" name="_subject" value="Nuevo mensaje desde ESTUDIO JURÍDICO">
-                    <input type="text" name="name" id="name" placeholder="Nombre" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <textarea name="message" id="message" placeholder="Mensaje" rows="5" required></textarea>
-                    <input type="submit" value="ENVIAR CORREO" class="button">
-                </form>
-                <br> <br>
-            </div>
-
-            <div id="right-block">
-                <a class="whatsapp" href="https://wa.me/2664756247?text=Hola%20quiero%20más%20info" target="_blank">
-                        <img src="assets/img/whatsapp.png" width="20vw" alt="WhatsApp Gladys y asociados">
-                        <b>2664756247</b>
-                        <button class="button">Mandar WhatsApp</button>
-                </a>
-                <div class="address">
-                    <div>
-                        <h3 id="address-title">DIRECCIÓN</h3>
-                        <span>
-                            25 de Mayo 1001.
-                            Esquina San Martín, local 2.
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#about"> NOSOTROS </a></li>
-                    <li><a href="#practice"> SERVICIOS </a></li>
-                    <li><a href="#contact"> CONTACTO </a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <p id="creditos">Creado por Leonardo Pedernera - pederneraleonardo.tec@gmail.com</p>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Estudio Jurídico Gladys Alaniz Fernández & Asociados - Abogados en San Luis, Argentina. Servicios legales en sucesiones, divorcios, amparos y más. Contacto directo por WhatsApp."
+    />
+    <meta
+      name="keywords"
+      content="Abogados San Luis, Estudio Jurídico, Gladys Alaniz Fernández, Gladys y Asociados, Servicios legales, Divorcios, Sucesiones, Amparos, Posesión Veinteañal, Desalojo, Reivindicación, Alimentos, Derecho de Familia, Asesoramiento legal, Consultoría jurídica, Defensa legal, Abogados especializados, Abogados de confianza, Abogados profesionales, Abogados en Argentina"
+    />
+    <meta name="theme-color" content="#0d2524" />
+    <title>Gladys y Asociados | Estudio Jurídico en San Luis</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
